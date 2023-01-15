@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: hsl(0deg, 0%, 100%);
+    background: var(--Violet) url("images/bg-desktop.svg") no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.wrapper {
+    height: 90%;
+    margin: 0 2.5rem;
+}
+
+
+header img {
+    width: 12rem;
+    margin-top: 3.5rem;
+}
+
+.hero {
+    display: flex;
+    gap: 40px;
+    margin-top: 4rem;
+
+}
+
+.hero-image img {
+    width: auto;
+}
+
+.text-content {
+    margin-top: 50px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+}
+
+.text-content p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 20px auto 35px;
+}
+
+.reg-btn {
+    border: 0.1rem solid white;
+    border-radius: 1.5rem;
+    padding: 0.8rem 3.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: hsl(0deg, 0%, 100%);
+    color: var(--Violet);
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+footer a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: solid 1px white;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    text-decoration: none;
+
+}
+
+
+@media screen and (max-width:380px) {
+
+    body {
+        background-image: url("images/bg-mobile.svg");
+    }
+
+    header img {
+        width: 8rem;
+        margin-top: 2rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 4rem;
+
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .text-content {
+        margin-top: 15px;
+        /* display: flex;
+        flex-direction: column; */
+    }
+
+    .text-content h1 {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+
+    .text-content p {
+        /* text-align: center; */
+    }
+
+    .reg-btn {
+        padding: 0.5rem 4.5rem;
+    }
+
+    footer {
+        justify-content: center;
+        margin: 4rem auto;
+    }
+}
